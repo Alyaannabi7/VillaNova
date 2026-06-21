@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Nova - Agenda</title>
+
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">Villa Nova</a>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenement.html">Événements</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="about.html">À propos</a></li>
+            </ul>
+        </nav>
+        <button class="burger" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="mobileMenu" class="mobile-menu">
+            <a href="index.html" class="navbar__link">Accueil</a>
+            <a href="evenement.html" class="navbar__link">Événements</a>
+            <a href="agenda.html" class="navbar__link">Agenda</a>
+            <a href="about.html" class="navbar__link">À propos</a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1>Agenda</h1>
+        <p>Retrouvez tous les événements du mois</p>
+    </section>
+
+    <div class="agenda-section">
+        <div class="calendar">
+            <div class="cal-nav">
+                <button id="prev-btn" aria-label="Mois précédent"><i class="ti ti-chevron-left"></i></button>
+                <h2 id="cal-title"></h2>
+                <button id="next-btn" aria-label="Mois suivant"><i class="ti ti-chevron-right"></i></button>
+            </div>
+            <div class="cal-grid" id="cal-grid"></div>
+        </div>
+
+        <div class="events-panel">
+            <h3 id="panel-title">Événements du mois</h3>
+            <div id="events-list"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i class="ti ti-sun footer-icon"></i>
+                <span>Villa Nova</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Accueil</a>
+                <a href="evenement.html">Événements</a>
+                <a href="agenda.html">Agenda</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="ti ti-brand-x"></i></a>
+            </div>
+        </div>
+        <p class="footer-copy">Villa Nova © 2026 - Tous droits réservés</p>
+        <div class="footer-payments">
+            <span>Moyens de paiement</span>
+            <div class="payment-icons">
+                <i class="ti ti-brand-visa" aria-label="Visa"></i>
+                <i class="ti ti-brand-mastercard" aria-label="Mastercard"></i>
+                <i class="ti ti-credit-card" aria-label="Carte bancaire"></i>
+                <i class="ti ti-brand-paypal" aria-label="Paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/agenda.js"></script>
+    <script src="js/nav-burger.js"></script>
+
+</body>
+
+</html>

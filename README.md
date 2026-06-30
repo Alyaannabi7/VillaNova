@@ -1,5 +1,5 @@
 
-# 🌟 Villa Nova — Projet by ALYA ANNABI
+# 🌟 Villa Nova Projet by ALYA ANNABI
 
 > Application web culturelle pour centraliser les événements d'une collectivité territoriale, destinée aux 18–40 ans.
 
